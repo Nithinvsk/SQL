@@ -1,0 +1,23 @@
+Foreign key (name of the object) references Another_Table_Name (name of the object of another table)
+
+select primary key, arithmetic_operations AS column_name from table;
+
+GROUP BY is used in SQL to group rows that have the same values in one or more columns.
+It is often used with aggregate functions (like COUNT(), SUM(), AVG(), MAX(), MIN()) to perform calculations on each group of rows.
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+WHERE condition
+GROUP BY column_name;
+GROUP BY must come after WHERE and before ORDER BY.
+Every column in SELECT that is not inside an aggregate function must be included in GROUP BY.
+
+
+In SQL, the ON keyword is used with JOIN to specify the condition that links (joins) the two tables.
+When you JOIN two tables, SQL needs to know which columns from each table should be matched.
+ON defines this matching condition.
+
+HAVING is used with aggregate functions (like SUM(), COUNT(), AVG(), etc.) to filter groups of rows.
+It works after GROUP BY has grouped the rows.
+It is similar to WHERE, but:
+WHERE filters individual rows before grouping
+HAVING filters groups after aggregation
